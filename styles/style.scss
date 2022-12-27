@@ -3,6 +3,21 @@ $darkAccent: #230c3c;
 $accent: #3b90e5;
 $lightColor: #ffffff;
 
+$headSize: 8rem;
+$subheadingSize: 4rem;
+
+@font-face {
+  font-family: "handlettering";
+  src: url("../fonts/Handlettering-Regular-Kerned.ttf") format("truetype");
+}
+
+@mixin flex-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 html,
 body {
   background-color: $darkColor;
@@ -12,17 +27,49 @@ body {
   height: 100%;
 }
 
+.content {
+  height: 100%;
+}
+
 .titleSection {
+  margin-left: 10%;
   background-color: $darkColor;
   display: flex;
-  width: 100%;
-
-  div img {
-    height: 100%;
+  width: 90%;
+  height: 100%;
+  div {
+    @include flex-center();
+    img {
+      height: 100%;
+      width: auto;
+    }
+  }
+  .imgContainer {
+    flex: 1;
   }
 }
 
 .landingSeparator,
 img {
   width: 100%;
+}
+
+h1,
+h2 {
+  font-family: "handlettering";
+  font-kerning: normal;
+  font-weight: 400;
+  margin: 0;
+}
+
+h1 {
+  font-size: $headSize;
+  color: $lightColor;
+  margin-bottom: -1.5rem;
+}
+
+h2 {
+  font-size: $subheadingSize;
+  font-weight: 600;
+  color: $accent;
 }

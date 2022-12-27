@@ -1,3 +1,7 @@
+@font-face {
+  font-family: "handlettering";
+  src: url("../fonts/Handlettering-Regular-Kerned.ttf") format("truetype");
+}
 html,
 body {
   background-color: #2e1760;
@@ -7,16 +11,52 @@ body {
   height: 100%;
 }
 
+.content {
+  height: 100%;
+}
+
 .titleSection {
+  margin-left: 10%;
   background-color: #2e1760;
   display: flex;
-  width: 100%;
+  width: 90%;
+  height: 100%;
+}
+.titleSection div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .titleSection div img {
   height: 100%;
+  width: auto;
+}
+.titleSection .imgContainer {
+  flex: 1;
 }
 
 .landingSeparator,
 img {
   width: 100%;
+}
+
+h1,
+h2 {
+  font-family: "handlettering";
+  font-kerning: normal;
+  font-weight: 400;
+  margin: 0;
+}
+
+h1 {
+  font-size: 8rem;
+  color: #ffffff;
+  margin-bottom: -1.5rem;
+}
+
+h2 {
+  font-size: 4rem;
+  font-weight: 600;
+  color: #3b90e5;
 }/*# sourceMappingURL=style.css.map */
