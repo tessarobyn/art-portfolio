@@ -36,8 +36,7 @@ body {
   flex: 1;
 }
 
-.landingSeparator,
-img {
+.landingSeparator {
   width: 100%;
 }
 
@@ -59,4 +58,35 @@ h2 {
   font-size: 4rem;
   font-weight: 600;
   color: #3b90e5;
+}
+
+.mainSection {
+  margin-top: -5px;
+  padding: 10%;
+  padding-top: 0;
+  background-color: #ffffff;
+}
+.mainSection h2 {
+  color: #230c3c;
+}
+.mainSection button {
+  color: #ffffff;
+  background-color: #2e1760;
+  border-style: none;
+  padding: 1rem 2rem 1rem 2rem;
+  font-size: 1rem;
+  font-family: "roboto", "sans-serif";
+  border-radius: 2rem;
+}
+
+.miniGallery {
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+}
+.miniGallery img {
+  width: 100%;
 }/*# sourceMappingURL=style.css.map */
