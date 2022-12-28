@@ -8,6 +8,7 @@ body {
   margin: 0;
   width: 100%;
   overflow-x: hidden;
+  font-size: 16px;
 }
 
 .navbar {
@@ -152,7 +153,21 @@ h2 {
   padding: 1rem;
   background-color: #2e1760;
   border-radius: 30px;
+  display: flex;
+}
+.processSection div * {
+  flex: 1;
 }
 .processSection div video {
   border-radius: 30px;
+}
+.processSection div p {
+  margin-left: 2rem;
+  margin-right: 2rem;
+  font-size: 1.5rem;
+  font-weight: 300;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }/*# sourceMappingURL=style.css.map */

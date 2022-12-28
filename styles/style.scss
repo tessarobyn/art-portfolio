@@ -27,6 +27,7 @@ body {
   margin: 0;
   width: 100%;
   overflow-x: hidden;
+  font-size: 16px;
 }
 
 .navbar {
@@ -163,8 +164,22 @@ h2 {
     padding: 1rem;
     background-color: $darkColor;
     border-radius: $borderRadius;
+    display: flex;
+    * {
+      flex: 1;
+    }
     video {
       border-radius: $borderRadius;
+    }
+    p {
+      margin-left: 2rem;
+      margin-right: 2rem;
+      font-size: 1.5rem;
+      font-weight: 300;
+      color: $lightColor;
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
   }
 }
