@@ -15,14 +15,14 @@
   </head>
   <body>
     <div class="navbar">
-      <ul>
-        <li class="home"><a href="index.html">Tessa</a></li>
+      <ul id="navbarUl">
+        <li class="home"><a class="homeText" href="index.html">Tessa</a></li>
         <li class="push"><a href="index.html#artworks">Artworks</a></li>
         <li><a href="index.html#process">Process</a></li>
       </ul>
     </div>
     <div class="content">
-      <div class="titleSection">
+      <div class="titleSection" id="titleSection">
         <div>
           <h1>Tessa</h1>
           <h2>illustration</h2>
@@ -30,6 +30,7 @@
         <div class="imgContainer">
           <img
             class="landingImg"
+            id="landingImg"
             alt="Girl on purple background"
             src="img/titleMorgan.PNG"
           />
@@ -68,6 +69,8 @@
     </div>
   </body>
   <footer>
-    <script src="script.js"></script>
+    <script src="/scripts/navbarChange.js"></script>
+    <script src="/scripts/separatorMargin.js"></script>
+    <script src="/scripts/landingImageSizing.js"></script>
   </footer>
 </html>
