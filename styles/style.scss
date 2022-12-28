@@ -171,15 +171,30 @@ h2 {
     video {
       border-radius: $borderRadius;
     }
-    p {
-      margin-left: 2rem;
-      margin-right: 2rem;
-      font-size: 1.5rem;
-      font-weight: 300;
-      color: $lightColor;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
+  }
+}
+
+p {
+  margin-left: 2rem;
+  margin-right: 2rem;
+  font-size: 1.5rem;
+  font-weight: 300;
+  color: $lightColor;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footerSvg {
+  margin-top: -15%;
+}
+
+.footer {
+  margin-top: -5%;
+  background-color: $darkColor;
+  padding: 1rem;
+  @include flex-center();
+  p {
+    margin: 0.5rem;
   }
 }
