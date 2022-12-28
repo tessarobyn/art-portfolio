@@ -3,6 +3,9 @@ $darkAccent: #230c3c;
 $accent: #3b90e5;
 $lightColor: #ffffff;
 
+$margin: 5rem;
+$borderRadius: 30px;
+
 $headSize: 12rem;
 $subheadingSize: 6rem;
 
@@ -24,6 +27,7 @@ body {
   margin: 0;
   width: 100%;
   height: 100%;
+  overflow-x: hidden;
 }
 
 .navbar {
@@ -38,6 +42,13 @@ body {
     padding-left: 10%;
     padding-right: 10%;
     display: flex;
+    .push {
+      margin-left: auto;
+    }
+    li {
+      padding: 1rem;
+      padding-left: 0;
+    }
   }
 }
 
@@ -67,6 +78,7 @@ body {
   background-color: $darkColor;
   .landingSeparator {
     width: 100%;
+    margin-bottom: -5px;
   }
 }
 
@@ -91,15 +103,14 @@ h2 {
 }
 
 .mainSection {
-  margin-top: -5px;
+  margin-top: -10%;
   padding: 10%;
   padding-top: 0;
-  background-color: $lightColor;
-
   h2 {
     color: $darkAccent;
   }
   button {
+    align-self: center;
     color: $lightColor;
     background-color: $darkColor;
     border-style: none;
@@ -110,13 +121,35 @@ h2 {
   }
 }
 
+.buttonContainer {
+  @include flex-center();
+}
+
 .miniGallery {
-  margin-top: 5rem;
-  margin-bottom: 5rem;
+  margin-top: $margin;
+  margin-bottom: 2rem;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  column-gap: 10px;
+  column-gap: 1rem;
   img {
     width: 100%;
+    border-radius: $borderRadius;
+  }
+}
+
+.processSection {
+  margin-top: $margin;
+  h2 {
+    margin-bottom: $margin;
+  }
+  div {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 1rem;
+    background-color: $darkColor;
+    border-radius: $borderRadius;
+    video {
+      border-radius: $borderRadius;
+    }
   }
 }

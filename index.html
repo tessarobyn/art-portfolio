@@ -16,8 +16,8 @@
   <body>
     <div class="navbar">
       <ul>
-        <li><a href="index.html">Tessa</a></li>
-        <li><a href="artworks.html">Artworks</a></li>
+        <li class="home"><a href="index.html">Tessa</a></li>
+        <li class="push"><a href="index.html#artworks">Artworks</a></li>
         <li><a href="index.html#process">Process</a></li>
       </ul>
     </div>
@@ -45,20 +45,24 @@
       </div>
 
       <div class="mainSection">
-        <div class="artworksSection">
+        <div class="artworksSection" id="artworks">
           <h2>Artworks</h2>
-          <button>View all</button>
           <div class="miniGallery">
             <img alt="kingfisher" src="img/kingfisher.PNG" />
             <img alt="dolores" src="img/dolores.jpg" />
             <img alt="converse" src="img/converse.PNG" />
           </div>
+          <div class="buttonContainer">
+            <button>View all</button>
+          </div>
         </div>
-        <div>
+        <div class="processSection" id="process">
           <h2>Process</h2>
-          <video width="320" height="400" autoplay muted loop>
-            <source src="vid/Beetle.mp4" type="video/mp4" />
-          </video>
+          <div>
+            <video width="50%" autoplay muted loop>
+              <source src="vid/Beetle.mp4" type="video/mp4" />
+            </video>
+          </div>
         </div>
       </div>
     </div>
