@@ -3,8 +3,8 @@ $darkAccent: #230c3c;
 $accent: #3b90e5;
 $lightColor: #ffffff;
 
-$headSize: 8rem;
-$subheadingSize: 4rem;
+$headSize: 12rem;
+$subheadingSize: 6rem;
 
 @font-face {
   font-family: "handlettering";
@@ -20,11 +20,25 @@ $subheadingSize: 4rem;
 
 html,
 body {
-  background-color: $darkColor;
   font-family: "roboto", "sans-serif";
   margin: 0;
   width: 100%;
   height: 100%;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    padding-left: 10%;
+    padding-right: 10%;
+    display: flex;
+  }
 }
 
 .content {
@@ -32,7 +46,7 @@ body {
 }
 
 .titleSection {
-  margin-left: 10%;
+  padding-left: 10%;
   background-color: $darkColor;
   display: flex;
   width: 90%;
@@ -40,7 +54,7 @@ body {
   div {
     @include flex-center();
     img {
-      height: 100%;
+      height: 120%;
       width: auto;
     }
   }
@@ -49,8 +63,11 @@ body {
   }
 }
 
-.landingSeparator {
-  width: 100%;
+.separatorContainer {
+  background-color: $darkColor;
+  .landingSeparator {
+    width: 100%;
+  }
 }
 
 h1,
