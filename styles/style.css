@@ -15,6 +15,7 @@ body {
   position: fixed;
   top: 0;
   width: 100%;
+  transition: top 0.4s ease;
 }
 .navbar ul {
   list-style-type: none;
@@ -112,12 +113,9 @@ h2 {
 }
 .mainSection button {
   align-self: center;
-  color: #ffffff;
   background-color: #2e1760;
   border-style: none;
   padding: 1rem 2rem 1rem 2rem;
-  font-size: 1rem;
-  font-family: "roboto", "sans-serif";
   border-radius: 2rem;
 }
 
@@ -151,7 +149,7 @@ h2 {
   box-sizing: border-box;
   width: 100%;
   padding: 1rem;
-  background-color: #2e1760;
+  background-color: #99c7f5;
   border-radius: 30px;
   display: flex;
 }
@@ -161,16 +159,24 @@ h2 {
 .processSection div video {
   border-radius: 30px;
 }
+.processSection div p {
+  color: #230c3c;
+}
 
 p {
   margin-left: 2rem;
   margin-right: 2rem;
-  font-size: 1.5rem;
-  font-weight: 300;
-  color: #ffffff;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+p,
+button {
+  font-size: 1.25rem;
+  font-weight: 400;
+  font-family: "roboto", sans-serif;
+  color: #ffffff;
 }
 
 .footerSvg {

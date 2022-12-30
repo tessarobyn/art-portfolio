@@ -1,6 +1,7 @@
 $darkColor: #2e1760;
 $darkAccent: #230c3c;
 $accent: #3b90e5;
+$lightAccent: #99c7f5;
 $lightColor: #ffffff;
 
 $margin: 5rem;
@@ -34,6 +35,7 @@ body {
   position: fixed;
   top: 0;
   width: 100%;
+  transition: top 0.4s ease;
   ul {
     list-style-type: none;
     margin: 0;
@@ -127,12 +129,9 @@ h2 {
   }
   button {
     align-self: center;
-    color: $lightColor;
     background-color: $darkColor;
     border-style: none;
     padding: 1rem 2rem 1rem 2rem;
-    font-size: 1rem;
-    font-family: "roboto", "sans-serif";
     border-radius: 2rem;
   }
 }
@@ -162,7 +161,7 @@ h2 {
     box-sizing: border-box;
     width: 100%;
     padding: 1rem;
-    background-color: $darkColor;
+    background-color: $lightAccent;
     border-radius: $borderRadius;
     display: flex;
     * {
@@ -171,18 +170,26 @@ h2 {
     video {
       border-radius: $borderRadius;
     }
+    p {
+      color: $darkAccent;
+    }
   }
 }
 
 p {
   margin-left: 2rem;
   margin-right: 2rem;
-  font-size: 1.5rem;
-  font-weight: 300;
-  color: $lightColor;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+p,
+button {
+  font-size: 1.25rem;
+  font-weight: 400;
+  font-family: "roboto", sans-serif;
+  color: $lightColor;
 }
 
 .footerSvg {
