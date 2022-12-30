@@ -1,14 +1,4 @@
-$darkColor: #2e1760;
-$darkAccent: #230c3c;
-$accent: #3b90e5;
-$lightAccent: #99c7f5;
-$lightColor: #ffffff;
-
-$margin: 5rem;
-$borderRadius: 30px;
-
-$headSize: 12rem;
-$subheadingSize: 6rem;
+@import "variables";
 
 @font-face {
   font-family: "handlettering";
@@ -37,7 +27,6 @@ body {
   width: 100%;
   transition: top 0.4s ease;
   ul {
-    background-color: $darkColor;
     list-style-type: none;
     margin: 0;
     padding: 0;
