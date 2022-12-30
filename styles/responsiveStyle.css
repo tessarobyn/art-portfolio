@@ -36,6 +36,10 @@ body {
   .miniGallery img {
     padding-bottom: 1rem;
   }
+  .gallery {
+    display: flex;
+    flex-direction: column;
+  }
   .titleSection {
     align-items: center;
     flex-direction: column;
