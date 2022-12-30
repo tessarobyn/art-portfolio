@@ -117,6 +117,10 @@ h2 {
   border-style: none;
   padding: 1rem 2rem 1rem 2rem;
   border-radius: 2rem;
+  transition: background-color 0.4s ease;
+}
+.mainSection button:hover {
+  background-color: #230c3c;
 }
 
 .buttonContainer {
