@@ -5,6 +5,9 @@ ul {
 .separatorContainer {
   padding-top: 60px;
 }
+.separatorContainer .landingSeparator {
+  margin-top: 0;
+}
 
 .gallery {
   margin-top: 5rem;
