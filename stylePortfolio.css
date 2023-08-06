@@ -1,0 +1,115 @@
+.content {
+  position: absolute;
+  padding-top: 7.5%;
+  z-index: 1;
+  width: 100%;
+}
+
+.titleContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.content > div > * {
+  text-align: center;
+  padding: 5px;
+}
+
+h1 {
+  color: #ffffff;
+}
+
+.images {
+  justify-content: center;
+  align-items: center;
+}
+
+h4 {
+  font-size: 20px;
+  margin: 10px;
+  margin-bottom: 20px;
+  color: #d8d8d8;
+  font-weight: 300;
+}
+
+h4 b {
+  font-weight: 700;
+}
+
+p {
+  font-size: 16px;
+  color: #ffffff;
+  margin: 0;
+}
+
+.imgCard {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(100, 100, 100, 0.7);
+  margin: 5px;
+  height: fit-content;
+  border-radius: 40px;
+}
+
+.imgCard:hover {
+  background-color: rgba(200, 200, 200, 0.5);
+  cursor: pointer;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 5%;
+}
+
+.gallery div {
+  flex: 1;
+  padding: 7.5px;
+}
+
+.gallery div img {
+  border-radius: 15px;
+  margin: 5px;
+}
+
+.imgContainer:hover img {
+  opacity: 0.3;
+  cursor: pointer;
+}
+
+.imgContainer:hover .textContainer {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.imgContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.textContainer {
+  position: absolute;
+  opacity: 0;
+}
+
+/* ------------ media queries --------------- */
+@media screen and (max-width: 600px) {
+  .titleContainer {
+    padding-top: 5%;
+  }
+
+  .gallery div {
+    flex: 40%;
+  }
+}
+
+@media screen and (min-width: 1800px) {
+  h4 {
+    font-size: 30px;
+  }
+  p {
+    font-size: 20px;
+  }
+}

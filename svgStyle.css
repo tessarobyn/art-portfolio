@@ -1,0 +1,135 @@
+/* ----------------- general --------------- */
+
+svg {
+  overflow: visible;
+  position: absolute;
+}
+
+rect {
+  stroke: none;
+  opacity: 0.5;
+}
+
+.purpleRect {
+  fill: #5e2bff;
+}
+
+.pinkRect {
+  fill: #c04cfd;
+}
+
+.blueRect {
+  fill: #a0ddff;
+}
+
+/* -------------- landing page ------------- */
+
+.a1,
+.a2,
+.a3 {
+  top: -20%;
+  left: 45%;
+}
+
+.a2 {
+  padding-left: 80px;
+}
+
+.a3 {
+  padding-left: 200px;
+}
+
+.a4,
+.a5,
+.a6 {
+  top: 50%;
+  left: 15%;
+}
+
+.a5 {
+  padding-top: 110px;
+}
+
+.a6 {
+  padding-top: 190px;
+}
+
+.b1,
+.b2,
+.b3 {
+  top: 100%;
+  right: 0;
+}
+
+.b2 {
+  padding-top: 150px;
+}
+
+.b3 {
+  padding-top: 80px;
+  padding-right: 150px;
+}
+
+.c1,
+.c2,
+.c3 {
+  top: 180%;
+  left: 5%;
+}
+
+.c2 {
+  padding-top: 210px;
+}
+
+.c3 {
+  padding-top: 160px;
+  padding-left: 200px;
+}
+
+.c4,
+.c5,
+.c6 {
+  top: 260%;
+  right: 0;
+}
+
+.c5 {
+  padding-top: 110px;
+}
+
+.c6 {
+  padding-top: 110px;
+  padding-right: 150px;
+}
+
+/* --------------- portfolio ---------------- */
+
+.p1,
+.p2,
+.p3 {
+  top: 30%;
+  right: 0%;
+}
+
+.p2 {
+  padding-top: 180px;
+}
+
+.p3 {
+  padding-top: 300px;
+}
+
+.p4,
+.p5,
+.p6 {
+  top: 15%;
+  left: 15%;
+}
+
+.p5 {
+  padding-top: 110px;
+}
+
+.p6 {
+  padding-top: 190px;
+}
