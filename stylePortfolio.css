@@ -46,14 +46,15 @@ p {
 .imgCard {
   display: flex;
   flex-direction: column;
-  background-color: rgba(100, 100, 100, 0.7);
+  background-color: rgba(22, 30, 112, 0.7);
   margin: 5px;
   height: fit-content;
   border-radius: 40px;
+  transition: background-color 0.5s;
 }
 
 .imgCard:hover {
-  background-color: rgba(200, 200, 200, 0.5);
+  background-color: rgb(22, 30, 112);
   cursor: pointer;
 }
 
@@ -71,6 +72,10 @@ p {
 .gallery div img {
   border-radius: 15px;
   margin: 5px;
+}
+
+.imgContainer img {
+  transition: opacity 0.5s;
 }
 
 .imgContainer:hover img {
