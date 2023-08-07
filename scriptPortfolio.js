@@ -75,8 +75,8 @@ function getDescription(imageFile) {
   const imageFiles = imageData[0];
   const categories = imageData[1];
   const categoryNames = imageData[2];
-  const fileSplit = imageFile.split(".")[0].split("/");
-  const fileName = fileSplit[fileSplit.length - 1];
+  const fileSplit = imageFile.split(/[\.\/]+/);
+  const fileName = fileSplit[fileSplit.length - 2];
   const name = fileName.split(/(?=[A-Z])/).join(" ");
   const data = [name, categoryNames[categories[imageFiles.indexOf(fileName)]]];
   return data;
